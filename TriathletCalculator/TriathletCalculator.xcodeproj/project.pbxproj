@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E0BAB222815B0D60077F18A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0BAB212815B0D60077F18A /* AppDelegate.swift */; };
+		4E0BAB242815B0D60077F18A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0BAB232815B0D60077F18A /* SceneDelegate.swift */; };
+		4E0BAB262815B0D60077F18A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0BAB252815B0D60077F18A /* ViewController.swift */; };
+		4E0BAB292815B0D60077F18A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E0BAB272815B0D60077F18A /* Main.storyboard */; };
+		4E0BAB2B2815B0D70077F18A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E0BAB2A2815B0D70077F18A /* Assets.xcassets */; };
+		4E0BAB2E2815B0D70077F18A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E0BAB2C2815B0D70077F18A /* LaunchScreen.storyboard */; };
+		4E0BAB392815B0D70077F18A /* TriathletCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0BAB382815B0D70077F18A /* TriathletCalculatorTests.swift */; };
+		4E0BAB432815B0D70077F18A /* TriathletCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0BAB422815B0D70077F18A /* TriathletCalculatorUITests.swift */; };
+		4E0BAB452815B0D70077F18A /* TriathletCalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0BAB442815B0D70077F18A /* TriathletCalculatorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4E0BAB352815B0D70077F18A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E0BAB162815B0D60077F18A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E0BAB1D2815B0D60077F18A;
+			remoteInfo = TriathletCalculator;
+		};
+		4E0BAB3F2815B0D70077F18A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E0BAB162815B0D60077F18A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E0BAB1D2815B0D60077F18A;
+			remoteInfo = TriathletCalculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4E0BAB1E2815B0D60077F18A /* TriathletCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriathletCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E0BAB212815B0D60077F18A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4E0BAB232815B0D60077F18A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4E0BAB252815B0D60077F18A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4E0BAB282815B0D60077F18A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4E0BAB2A2815B0D70077F18A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E0BAB2D2815B0D70077F18A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4E0BAB2F2815B0D70077F18A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E0BAB342815B0D70077F18A /* TriathletCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriathletCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E0BAB382815B0D70077F18A /* TriathletCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriathletCalculatorTests.swift; sourceTree = "<group>"; };
+		4E0BAB3E2815B0D70077F18A /* TriathletCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriathletCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E0BAB422815B0D70077F18A /* TriathletCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriathletCalculatorUITests.swift; sourceTree = "<group>"; };
+		4E0BAB442815B0D70077F18A /* TriathletCalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriathletCalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E0BAB1B2815B0D60077F18A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0BAB312815B0D70077F18A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0BAB3B2815B0D70077F18A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E0BAB152815B0D60077F18A = {
+			isa = PBXGroup;
+			children = (
+				4E0BAB202815B0D60077F18A /* TriathletCalculator */,
+				4E0BAB372815B0D70077F18A /* TriathletCalculatorTests */,
+				4E0BAB412815B0D70077F18A /* TriathletCalculatorUITests */,
+				4E0BAB1F2815B0D60077F18A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4E0BAB1F2815B0D60077F18A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E0BAB1E2815B0D60077F18A /* TriathletCalculator.app */,
+				4E0BAB342815B0D70077F18A /* TriathletCalculatorTests.xctest */,
+				4E0BAB3E2815B0D70077F18A /* TriathletCalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E0BAB202815B0D60077F18A /* TriathletCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				4E0BAB212815B0D60077F18A /* AppDelegate.swift */,
+				4E0BAB232815B0D60077F18A /* SceneDelegate.swift */,
+				4E0BAB252815B0D60077F18A /* ViewController.swift */,
+				4E0BAB272815B0D60077F18A /* Main.storyboard */,
+				4E0BAB2A2815B0D70077F18A /* Assets.xcassets */,
+				4E0BAB2C2815B0D70077F18A /* LaunchScreen.storyboard */,
+				4E0BAB2F2815B0D70077F18A /* Info.plist */,
+			);
+			path = TriathletCalculator;
+			sourceTree = "<group>";
+		};
+		4E0BAB372815B0D70077F18A /* TriathletCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				4E0BAB382815B0D70077F18A /* TriathletCalculatorTests.swift */,
+			);
+			path = TriathletCalculatorTests;
+			sourceTree = "<group>";
+		};
+		4E0BAB412815B0D70077F18A /* TriathletCalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4E0BAB422815B0D70077F18A /* TriathletCalculatorUITests.swift */,
+				4E0BAB442815B0D70077F18A /* TriathletCalculatorUITestsLaunchTests.swift */,
+			);
+			path = TriathletCalculatorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E0BAB1D2815B0D60077F18A /* TriathletCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E0BAB482815B0D70077F18A /* Build configuration list for PBXNativeTarget "TriathletCalculator" */;
+			buildPhases = (
+				4E0BAB1A2815B0D60077F18A /* Sources */,
+				4E0BAB1B2815B0D60077F18A /* Frameworks */,
+				4E0BAB1C2815B0D60077F18A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TriathletCalculator;
+			productName = TriathletCalculator;
+			productReference = 4E0BAB1E2815B0D60077F18A /* TriathletCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4E0BAB332815B0D70077F18A /* TriathletCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E0BAB4B2815B0D70077F18A /* Build configuration list for PBXNativeTarget "TriathletCalculatorTests" */;
+			buildPhases = (
+				4E0BAB302815B0D70077F18A /* Sources */,
+				4E0BAB312815B0D70077F18A /* Frameworks */,
+				4E0BAB322815B0D70077F18A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E0BAB362815B0D70077F18A /* PBXTargetDependency */,
+			);
+			name = TriathletCalculatorTests;
+			productName = TriathletCalculatorTests;
+			productReference = 4E0BAB342815B0D70077F18A /* TriathletCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4E0BAB3D2815B0D70077F18A /* TriathletCalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E0BAB4E2815B0D70077F18A /* Build configuration list for PBXNativeTarget "TriathletCalculatorUITests" */;
+			buildPhases = (
+				4E0BAB3A2815B0D70077F18A /* Sources */,
+				4E0BAB3B2815B0D70077F18A /* Frameworks */,
+				4E0BAB3C2815B0D70077F18A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E0BAB402815B0D70077F18A /* PBXTargetDependency */,
+			);
+			name = TriathletCalculatorUITests;
+			productName = TriathletCalculatorUITests;
+			productReference = 4E0BAB3E2815B0D70077F18A /* TriathletCalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E0BAB162815B0D60077F18A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					4E0BAB1D2815B0D60077F18A = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					4E0BAB332815B0D70077F18A = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 4E0BAB1D2815B0D60077F18A;
+					};
+					4E0BAB3D2815B0D70077F18A = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 4E0BAB1D2815B0D60077F18A;
+					};
+				};
+			};
+			buildConfigurationList = 4E0BAB192815B0D60077F18A /* Build configuration list for PBXProject "TriathletCalculator" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E0BAB152815B0D60077F18A;
+			productRefGroup = 4E0BAB1F2815B0D60077F18A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E0BAB1D2815B0D60077F18A /* TriathletCalculator */,
+				4E0BAB332815B0D70077F18A /* TriathletCalculatorTests */,
+				4E0BAB3D2815B0D70077F18A /* TriathletCalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E0BAB1C2815B0D60077F18A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E0BAB2E2815B0D70077F18A /* LaunchScreen.storyboard in Resources */,
+				4E0BAB2B2815B0D70077F18A /* Assets.xcassets in Resources */,
+				4E0BAB292815B0D60077F18A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0BAB322815B0D70077F18A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0BAB3C2815B0D70077F18A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E0BAB1A2815B0D60077F18A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E0BAB262815B0D60077F18A /* ViewController.swift in Sources */,
+				4E0BAB222815B0D60077F18A /* AppDelegate.swift in Sources */,
+				4E0BAB242815B0D60077F18A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0BAB302815B0D70077F18A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E0BAB392815B0D70077F18A /* TriathletCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0BAB3A2815B0D70077F18A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E0BAB452815B0D70077F18A /* TriathletCalculatorUITestsLaunchTests.swift in Sources */,
+				4E0BAB432815B0D70077F18A /* TriathletCalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E0BAB362815B0D70077F18A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E0BAB1D2815B0D60077F18A /* TriathletCalculator */;
+			targetProxy = 4E0BAB352815B0D70077F18A /* PBXContainerItemProxy */;
+		};
+		4E0BAB402815B0D70077F18A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E0BAB1D2815B0D60077F18A /* TriathletCalculator */;
+			targetProxy = 4E0BAB3F2815B0D70077F18A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4E0BAB272815B0D60077F18A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E0BAB282815B0D60077F18A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4E0BAB2C2815B0D70077F18A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E0BAB2D2815B0D70077F18A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E0BAB462815B0D70077F18A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4E0BAB472815B0D70077F18A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E0BAB492815B0D70077F18A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2KRRAMT3WK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TriathletCalculator/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neosoft.www.TriathletCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4E0BAB4A2815B0D70077F18A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2KRRAMT3WK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TriathletCalculator/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neosoft.www.TriathletCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4E0BAB4C2815B0D70077F18A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2KRRAMT3WK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neosoft.www.TriathletCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TriathletCalculator.app/TriathletCalculator";
+			};
+			name = Debug;
+		};
+		4E0BAB4D2815B0D70077F18A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2KRRAMT3WK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neosoft.www.TriathletCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TriathletCalculator.app/TriathletCalculator";
+			};
+			name = Release;
+		};
+		4E0BAB4F2815B0D70077F18A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2KRRAMT3WK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neosoft.www.TriathletCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TriathletCalculator;
+			};
+			name = Debug;
+		};
+		4E0BAB502815B0D70077F18A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2KRRAMT3WK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neosoft.www.TriathletCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TriathletCalculator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E0BAB192815B0D60077F18A /* Build configuration list for PBXProject "TriathletCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E0BAB462815B0D70077F18A /* Debug */,
+				4E0BAB472815B0D70077F18A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E0BAB482815B0D70077F18A /* Build configuration list for PBXNativeTarget "TriathletCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E0BAB492815B0D70077F18A /* Debug */,
+				4E0BAB4A2815B0D70077F18A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E0BAB4B2815B0D70077F18A /* Build configuration list for PBXNativeTarget "TriathletCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E0BAB4C2815B0D70077F18A /* Debug */,
+				4E0BAB4D2815B0D70077F18A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E0BAB4E2815B0D70077F18A /* Build configuration list for PBXNativeTarget "TriathletCalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E0BAB4F2815B0D70077F18A /* Debug */,
+				4E0BAB502815B0D70077F18A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E0BAB162815B0D60077F18A /* Project object */;
+}
