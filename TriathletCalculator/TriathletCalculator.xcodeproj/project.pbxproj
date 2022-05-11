@@ -133,13 +133,13 @@
 		4E0BAB202815B0D60077F18A /* TriathletCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				4E8CDB8F281C76D600CBD44B /* QuestionAndAnswer */,
-				4E8CDB8B281C768A00CBD44B /* Forecasts */,
 				4E8CDB8A281C768000CBD44B /* Calculator */,
+				4E8CDB8B281C768A00CBD44B /* Forecasts */,
+				4E8CDB8F281C76D600CBD44B /* QuestionAndAnswer */,
 				4EE4C1782827169A001299EC /* Settings */,
+				4E8CDB99281C787700CBD44B /* Services */,
 				4E0BAB212815B0D60077F18A /* AppDelegate.swift */,
 				4E0BAB232815B0D60077F18A /* SceneDelegate.swift */,
-				4E8CDB99281C787700CBD44B /* Services */,
 				4E0BAB2A2815B0D70077F18A /* Assets.xcassets */,
 				4E0BAB2F2815B0D70077F18A /* Info.plist */,
 			);

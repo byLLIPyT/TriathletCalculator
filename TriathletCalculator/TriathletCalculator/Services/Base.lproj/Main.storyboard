@@ -3,7 +3,6 @@
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,10 +11,7 @@
         <scene sceneID="XzT-bW-UFg">
             <objects>
                 <viewControllerPlaceholder storyboardName="QaA" id="9zO-jZ-2Oa" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Questions" id="HIe-lk-yAp">
-                        <imageReference key="image" image="tray.fill" catalog="system" symbolScale="large"/>
-                        <imageReference key="selectedImage" image="j.square.on.square.fill" catalog="system" symbolScale="large"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Questions" id="HIe-lk-yAp"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gd0-E2-Pfk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -26,7 +22,6 @@
             <objects>
                 <viewControllerPlaceholder storyboardName="Calculator" id="RHF-SQ-vUN" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Calculator" id="PRy-sr-5sG">
-                        <imageReference key="image" image="sdcard.fill" catalog="system" symbolScale="large"/>
                         <color key="badgeColor" systemColor="systemIndigoColor"/>
                     </tabBarItem>
                 </viewControllerPlaceholder>
@@ -38,7 +33,7 @@
         <scene sceneID="Rc9-vd-NbO">
             <objects>
                 <viewControllerPlaceholder storyboardName="Forecast" id="FAG-56-chl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Forecast" image="infinity" catalog="system" id="o5a-17-mfz"/>
+                    <tabBarItem key="tabBarItem" title="Forecast" id="o5a-17-mfz"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fca-H7-YMT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,9 +49,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="RHF-SQ-vUN" kind="relationship" relationship="viewControllers" id="qg1-I8-5eB"/>
                         <segue destination="FAG-56-chl" kind="relationship" relationship="viewControllers" id="61I-hE-N3Y"/>
                         <segue destination="9zO-jZ-2Oa" kind="relationship" relationship="viewControllers" id="fk0-k9-Mos"/>
-                        <segue destination="RHF-SQ-vUN" kind="relationship" relationship="viewControllers" id="qg1-I8-5eB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x6O-0r-mc5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -65,10 +60,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="infinity" catalog="system" width="128" height="61"/>
-        <image name="j.square.on.square.fill" catalog="system" width="128" height="113"/>
-        <image name="sdcard.fill" catalog="system" width="115" height="128"/>
-        <image name="tray.fill" catalog="system" width="128" height="88"/>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
