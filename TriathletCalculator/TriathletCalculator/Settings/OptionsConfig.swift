@@ -7,6 +7,7 @@
 
 import Foundation
 
-public struct OptionsConfig {
+public struct OptionsConfig {    
+    static let defaultDistance = Distance(swimDistance: 1.9, bikeDistance: 90.0, runDistance: 21.0)
     
 }
