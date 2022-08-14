@@ -8,7 +8,7 @@
 import UIKit
 
 class CalculatorViewController: UIViewController,UITextFieldDelegate {
-
+    
     @IBOutlet weak var totalTimeLabel: UILabel!
     
     //MARK: - Swim
@@ -129,12 +129,14 @@ class CalculatorViewController: UIViewController,UITextFieldDelegate {
         let hourInt = convert.stringToInt(str: swimHoursTime.text!)
         let minInt = convert.stringToInt(str: swimMinutesTime.text!)
         let secInt = convert.stringToInt(str: swimSecondsTime.text!)
-        let speed = swimSport?.calculateSpeed(hours: hourInt, minutes: minInt, seconds: secInt)
-        let pace = swimSport?.calculatePace(hours: hourInt, minutes: minInt, seconds: secInt)
-        if let speed = speed, let pace = pace {
-            swimSpeed.text = String(speed)
-            swimMinutesPace.text = String(pace.0)
-            swimSecondsPace.text = String(pace.1)
+        let speed = swimSport?.calculateSpeed(hours: hourInt, minutes: minInt, seconds: secInt, pace: 0.0)
+        if let speed = speed {
+            let pace = swimSport?.calculatePace(hours: hourInt, minutes: minInt, seconds: secInt, speed: speed)
+            if let pace = pace {
+                swimSpeed.text = String(speed)
+                swimMinutesPace.text = String(pace.0)
+                swimSecondsPace.text = String(pace.1)
+            }
         }
     }
     
@@ -142,13 +144,17 @@ class CalculatorViewController: UIViewController,UITextFieldDelegate {
         let hourInt = convert.stringToInt(str: swimHoursTime.text!)
         let minInt = convert.stringToInt(str: swimMinutesTime.text!)
         let secInt = convert.stringToInt(str: swimSecondsTime.text!)
-        let speed = swimSport?.calculateSpeed(hours: hourInt, minutes: minInt, seconds: secInt)
-        let time = swimSport?.calculateTime(hours: hourInt, minutes: minInt, seconds: secInt)
-        if let speed = speed, let time = time {
-            swimSpeed.text = String(speed)
-            swimHoursTime.text = String(time.0)
-            swimSecondsPace.text = String(time.1)
-            swimSecondsTime.text = String(time.2)
+        let paceMin = convert.stringToDouble(str: swimMinutesPace.text!)
+        let paceSec = convert.stringToDouble(str: swimSecondsPace.text!)
+        let speed = swimSport?.calculateSpeed(hours: hourInt, minutes: minInt, seconds: secInt, pace: paceMin * 60 + paceSec)
+        if let speed = speed {
+            let time = swimSport?.calculateTime(hours: hourInt, minutes: minInt, seconds: secInt, speed: speed)
+            if let time = time {
+                swimSpeed.text = String(speed)
+                swimHoursTime.text = String(time.0)
+                swimMinutesTime.text = String(time.1)
+                swimSecondsTime.text = String(time.2)
+            }
         }
     }
     
@@ -156,12 +162,14 @@ class CalculatorViewController: UIViewController,UITextFieldDelegate {
         let hourInt = convert.stringToInt(str: swimHoursTime.text!)
         let minInt = convert.stringToInt(str: swimMinutesTime.text!)
         let secInt = convert.stringToInt(str: swimSecondsTime.text!)
-        let speed = swimSport?.calculateSpeed(hours: hourInt, minutes: minInt, seconds: secInt)
-        let time = swimSport?.calculateTime(hours: hourInt, minutes: minInt, seconds: secInt)
-        if let speed = speed, let time = time {
-            swimSpeed.text = String(speed)
+        let speed = convert.stringToDouble(str: swimSpeed.text!)
+        let pace = swimSport?.calculatePace(hours: hourInt, minutes: minInt, seconds: secInt, speed: speed)
+        let time = swimSport?.calculateTime(hours: hourInt, minutes: minInt, seconds: secInt, speed: speed)
+        if let time = time, let pace = pace {
+            swimMinutesPace.text = String(pace.0)
+            swimSecondsPace.text = String(pace.1)
             swimHoursTime.text = String(time.0)
-            swimSecondsPace.text = String(time.1)
+            swimMinutesTime.text = String(time.1)
             swimSecondsTime.text = String(time.2)
         }
     }

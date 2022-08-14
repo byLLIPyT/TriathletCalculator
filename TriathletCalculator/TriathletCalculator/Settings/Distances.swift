@@ -15,6 +15,5 @@ struct Distances {
     
     func changeValue(swim: Double, bike: Double, run: Double) {
         //swim = swim
-        
     }
 }
