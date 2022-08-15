@@ -31,8 +31,7 @@ class Sport {
         let speed = distance / (Double(hours) + Double(minutes) / 60.0 + Double(seconds) / 3600.0)
         return round(speed * 100) / 100
         } else {
-            let timeToDistance = (distance * 10 * (pace / 60.0)).rounded(.up)
-            let speed = (distance / (timeToDistance / 60.0))            
+            let speed = 60 / ((pace * 10) / 60)
             return round(speed * 100) / 100
         }        
     }
@@ -49,14 +48,14 @@ class Sport {
         return (timeHour , timeMin, timeSec)
     }
     
-    func calculatePace(hours: Int, minutes: Int, seconds: Int, speed: Double) -> (Int, Int) {
+    func calculatePace(hours: Int, minutes: Int, seconds: Int, speed: Double, sportType: SportType) -> (Int, Int) {
         if speed == 0 {
         let pace = (Double(hours) * 60 + Double(minutes) + Double(seconds) / 60) / (distance * 10)
         let paceMin = pace.rounded(.down)
         let paceSec = ((60 * ((pace - paceMin) * 100)) / 100).rounded(.down)
         return (Int(paceMin), Int(paceSec))
         } else {
-            let pace = 60 / speed / 10
+            let pace = sportType == .swim ? 60 / speed / 10 : 60 / speed
             let paceMin = pace.rounded(.down)
             let paceSec = ((60 * ((pace - paceMin) * 100)) / 100).rounded(.down)
             return (Int(paceMin), Int(paceSec))
