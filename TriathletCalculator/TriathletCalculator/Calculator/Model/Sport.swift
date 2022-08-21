@@ -31,8 +31,13 @@ class Sport {
         let speed = distance / (Double(hours) + Double(minutes) / 60.0 + Double(seconds) / 3600.0)
         return round(speed * 100) / 100
         } else {
-            let speed = 60 / ((pace * 10) / 60)
-            return round(speed * 100) / 100
+            if type == .swim {
+                let speed = 60 / ((pace * 10) / 60)
+                return round(speed * 100) / 100
+            } else {
+                let speed = 60 / ((pace) / 60)
+                return round(speed * 100) / 100
+            }            
         }        
     }
     

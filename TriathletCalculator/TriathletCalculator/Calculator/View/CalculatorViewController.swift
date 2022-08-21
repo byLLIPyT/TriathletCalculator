@@ -10,17 +10,34 @@ import UIKit
 class CalculatorViewController: UIViewController,UITextFieldDelegate {
     
     @IBOutlet weak var totalTimeLabel: UILabel!
+    @IBOutlet weak var saveButton: UIButton!
+    
+    @IBOutlet weak var sprintButton: UIButton!
+    @IBOutlet weak var kilometersButton: UIButton!
+    @IBOutlet var mainView: UIView!
     
     //MARK: - Swim
     
+    @IBOutlet weak var swimMainView: UIView!
+    @IBOutlet weak var swimTimeLabel: UILabel!
+    @IBOutlet weak var swimPaceLabel: UILabel!
+    @IBOutlet weak var swimSpeedLabel: UILabel!
     @IBOutlet weak var swimHoursTime: UITextField!
     @IBOutlet weak var swimMinutesTime: UITextField!
     @IBOutlet weak var swimSecondsTime: UITextField!
     @IBOutlet weak var swimMinutesPace: UITextField!
     @IBOutlet weak var swimSecondsPace: UITextField!
     @IBOutlet weak var swimSpeed: UITextField!
+    @IBOutlet weak var swimEmptyPace: UITextField!
     
     //MARK: - Bike
+    @IBOutlet weak var bikeMainView: UIView!
+    @IBOutlet weak var bikeTimeLabel: UILabel!
+    @IBOutlet weak var bikePaceLabel: UILabel!
+    @IBOutlet weak var bikeSpeedLabel: UILabel!
+    @IBOutlet weak var bikeEmptyPace: UITextField!
+    
+    
     
     @IBOutlet weak var bikeHoursTime: UITextField!
     @IBOutlet weak var bikeMinutesTime: UITextField!
@@ -30,6 +47,11 @@ class CalculatorViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var bikeSpeed: UITextField!
     
     //MARK: - Run
+    @IBOutlet weak var runMainView: UIView!
+    @IBOutlet weak var runTextLabel: UILabel!
+    @IBOutlet weak var runPaceLabel: UILabel!
+    @IBOutlet weak var runSpeedLabel: UILabel!
+    @IBOutlet weak var runEmptyPace: UITextField!
     
     @IBOutlet weak var runHoursTime: UITextField!
     @IBOutlet weak var runMinutesTime: UITextField!
@@ -39,6 +61,9 @@ class CalculatorViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var runSpeed: UITextField!
     
     //MARK: - Transit zones
+    @IBOutlet weak var transitMainView: UIView!
+    @IBOutlet weak var t1Label: UILabel!
+    @IBOutlet weak var t2Label: UILabel!
     
     @IBOutlet weak var firstTransitMinutes: UITextField!
     @IBOutlet weak var firstTransitSeconds: UITextField!
@@ -62,7 +87,7 @@ class CalculatorViewController: UIViewController,UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupUI()
         if storageService.getSwimDistance() == 0.0
             || storageService.getBikeDistance() == 0.0
             || storageService.getRunDistance() == 0.0 {
@@ -278,7 +303,7 @@ class CalculatorViewController: UIViewController,UITextFieldDelegate {
         }
     }
     
-    //TODO: - исправить расчет по темпу в беге и велосипеде - счиается из расчета на 100 метров, переделать на километры
+    //TODO: - поработать с сточностью округлений, не всегда совпадают расчеты по скорости и темпу
     
     private func calculateWhenSpeedChanged(sportType: SportType) {
         switch sportType {
@@ -325,5 +350,124 @@ class CalculatorViewController: UIViewController,UITextFieldDelegate {
                 runSecondsTime.text = String(time.2)
             }
         }
+    }
+    
+    private func setupUI() {
+        let borderButtonColor = UIColor(named: "colorButtonBorder")
+        let swimTextFieldColor = UIColor(named: "textFieldSwimColor")
+        let viewTextLabelColor = UIColor(named: "viewsTextColor")
+        let totalTextColor = UIColor(named: "totalTextColor")
+        let saveButtonColor = UIColor(named: "saveButtonColor")
+        let swimViewColor = UIColor(named: "swimViewColor")
+        let bikeViewColor = UIColor(named: "bikeViewColor")
+        let runViewColor = UIColor(named: "runViewColor")
+        let transitMainViewColor = UIColor(named: "transitMainViewColor")
+        let mainViewColor = UIColor(named: "mainViewColor")
+        let textFieldTextColor = UIColor(named: "textFieldTextColor")
+        mainView.backgroundColor = mainViewColor
+        //MARK: - header
+        sprintButton.layer.cornerRadius = 16
+        sprintButton.layer.borderColor = borderButtonColor?.cgColor
+        sprintButton.layer.borderWidth = 1
+        sprintButton.tintColor = borderButtonColor
+        sprintButton.backgroundColor = .clear
+        kilometersButton.layer.cornerRadius = 16
+        kilometersButton.layer.borderWidth = 1
+        kilometersButton.layer.borderColor = borderButtonColor?.cgColor
+        kilometersButton.tintColor = borderButtonColor
+        kilometersButton.backgroundColor = .clear
+        totalTimeLabel.textColor = totalTextColor
+        saveButton.tintColor = saveButtonColor
+        
+        //MARK: - Swim
+        //view
+        swimMainView.layer.backgroundColor = swimViewColor?.cgColor
+        swimMainView.layer.cornerRadius = 12
+        //textFields
+        swimSpeed.backgroundColor = swimTextFieldColor
+        swimHoursTime.backgroundColor = swimTextFieldColor
+        swimMinutesTime.backgroundColor = swimTextFieldColor
+        swimSecondsTime.backgroundColor = swimTextFieldColor
+        swimMinutesPace.backgroundColor = swimTextFieldColor
+        swimSecondsPace.backgroundColor = swimTextFieldColor
+        swimEmptyPace.backgroundColor = swimTextFieldColor
+        
+        swimSpeed.textColor = textFieldTextColor
+        swimHoursTime.textColor = textFieldTextColor
+        swimMinutesTime.textColor = textFieldTextColor
+        swimSecondsTime.textColor = textFieldTextColor
+        swimMinutesPace.textColor = textFieldTextColor
+        swimSecondsPace.textColor = textFieldTextColor
+        swimEmptyPace.textColor = textFieldTextColor
+        
+        //label
+        swimTimeLabel.textColor = viewTextLabelColor
+        swimPaceLabel.textColor = viewTextLabelColor
+        swimSpeedLabel.textColor = viewTextLabelColor
+        
+        //MARK: - Bike
+        //view
+        bikeMainView.layer.backgroundColor = bikeViewColor?.cgColor
+        bikeMainView.layer.cornerRadius = 12
+        //textFields
+        bikeSpeed.backgroundColor = swimTextFieldColor
+        bikeHoursTime.backgroundColor = swimTextFieldColor
+        bikeMinutesTime.backgroundColor = swimTextFieldColor
+        bikeSecondsTime.backgroundColor = swimTextFieldColor
+        bikeMinutesPace.backgroundColor = swimTextFieldColor
+        bikeSecondsPace.backgroundColor = swimTextFieldColor
+        bikeEmptyPace.backgroundColor = swimTextFieldColor
+        
+        bikeSpeed.textColor = textFieldTextColor
+        bikeHoursTime.textColor = textFieldTextColor
+        bikeMinutesTime.textColor = textFieldTextColor
+        bikeSecondsTime.textColor = textFieldTextColor
+        bikeMinutesPace.textColor = textFieldTextColor
+        bikeSecondsPace.textColor = textFieldTextColor
+        bikeEmptyPace.textColor = textFieldTextColor
+        //label
+        bikeTimeLabel.textColor = viewTextLabelColor
+        bikePaceLabel.textColor = viewTextLabelColor
+        bikeSpeedLabel.textColor = viewTextLabelColor
+        
+        //MARK: - Run
+        //view
+        runMainView.layer.backgroundColor = runViewColor?.cgColor
+        runMainView.layer.cornerRadius = 12
+        //textFields
+        runSpeed.backgroundColor = swimTextFieldColor
+        runHoursTime.backgroundColor = swimTextFieldColor
+        runMinutesTime.backgroundColor = swimTextFieldColor
+        runSecondsTime.backgroundColor = swimTextFieldColor
+        runMinutesPace.backgroundColor = swimTextFieldColor
+        runSecondsPace.backgroundColor = swimTextFieldColor
+        runEmptyPace.backgroundColor = swimTextFieldColor
+        
+        runSpeed.textColor = textFieldTextColor
+        runHoursTime.textColor = textFieldTextColor
+        runMinutesTime.textColor = textFieldTextColor
+        runSecondsTime.textColor = textFieldTextColor
+        runMinutesPace.textColor = textFieldTextColor
+        runSecondsPace.textColor = textFieldTextColor
+        runEmptyPace.textColor = textFieldTextColor
+        
+        //label
+        runTextLabel.textColor = viewTextLabelColor
+        runPaceLabel.textColor = viewTextLabelColor
+        runSpeedLabel.textColor = viewTextLabelColor
+        
+        //MARK: - Transite
+        //view
+        transitMainView.layer.backgroundColor = transitMainViewColor?.cgColor
+        transitMainView.layer.cornerRadius = 12
+        //textFields
+        firstTransitMinutes.backgroundColor = swimTextFieldColor
+        firstTransitSeconds.backgroundColor = swimTextFieldColor
+        
+        secondTransitMinutes.backgroundColor = swimTextFieldColor
+        secondTransitSeconds.backgroundColor = swimTextFieldColor
+        //label
+        t1Label.textColor = viewTextLabelColor
+        t2Label.textColor = viewTextLabelColor
     }
 }

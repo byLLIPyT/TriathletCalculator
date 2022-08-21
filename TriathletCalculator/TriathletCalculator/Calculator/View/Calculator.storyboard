@@ -43,8 +43,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bPV-0D-lAa">
-                                <rect key="frame" x="16" y="151" width="27" height="28"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Swim" translatesAutoresizingMaskIntoConstraints="NO" id="bPV-0D-lAa">
+                                <rect key="frame" x="16" y="153" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1k-Z3-Otx">
@@ -54,28 +54,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fKm-ea-scX">
-                                <rect key="frame" x="20" y="356" width="27" height="28"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bike" translatesAutoresizingMaskIntoConstraints="NO" id="fKm-ea-scX">
+                                <rect key="frame" x="20" y="356" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bike" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZn-cc-HRX">
-                                <rect key="frame" x="49" y="360" width="33" height="21"/>
+                                <rect key="frame" x="50" y="358" width="33" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Nm-cL-94x">
-                                <rect key="frame" x="16" y="552" width="27" height="28"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Run" translatesAutoresizingMaskIntoConstraints="NO" id="6Nm-cL-94x">
+                                <rect key="frame" x="16" y="552" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Run" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doO-k6-pjy">
-                                <rect key="frame" x="45" y="556" width="30" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q5u-D9-3ia">
                                 <rect key="frame" x="16" y="392" width="378" height="151"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -121,7 +114,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="- -" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RDe-EM-89M">
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="- -" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RDe-EM-89M">
                                         <rect key="frame" x="88" y="59" width="75" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -209,7 +202,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="- -" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dxi-1T-8fx">
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="- -" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dxi-1T-8fx">
                                         <rect key="frame" x="88" y="59" width="75" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -264,32 +257,32 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mm" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HJj-rq-4Io">
-                                        <rect key="frame" x="34" y="9" width="44" height="34"/>
+                                        <rect key="frame" x="34" y="9" width="65" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ss" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="heL-EI-Ztb">
-                                        <rect key="frame" x="86" y="9" width="44" height="34"/>
+                                        <rect key="frame" x="106" y="9" width="65" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="T1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4q-k0-c5F">
-                                        <rect key="frame" x="247" y="16" width="18" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="T2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4q-k0-c5F">
+                                        <rect key="frame" x="181" y="16" width="21" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mm" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Ti-d3-a0C">
-                                        <rect key="frame" x="273" y="9" width="44" height="34"/>
+                                        <rect key="frame" x="212" y="9" width="65" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ss" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EvP-uV-vV8">
-                                        <rect key="frame" x="325" y="9" width="44" height="34"/>
+                                        <rect key="frame" x="285" y="9" width="65" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -342,7 +335,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="- -" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kFX-W7-hKv">
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="- -" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kFX-W7-hKv">
                                         <rect key="frame" x="88" y="59" width="75" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -397,6 +390,13 @@
                                     <action selector="saveButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="K02-8O-D4A"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Run" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doO-k6-pjy">
+                                <rect key="frame" x="45" y="554" width="30" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -408,29 +408,51 @@
                     <tabBarItem key="tabBarItem" title="Calculator" image="Calculator" id="vsJ-gc-5Au"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="bikeEmptyPace" destination="RDe-EM-89M" id="rPt-Hr-mwv"/>
                         <outlet property="bikeHoursTime" destination="bgR-2m-Abm" id="I4p-hW-HRb"/>
+                        <outlet property="bikeMainView" destination="q5u-D9-3ia" id="j1W-ZF-ckn"/>
                         <outlet property="bikeMinutesPace" destination="ugW-ab-cUl" id="Bew-XR-HNZ"/>
                         <outlet property="bikeMinutesTime" destination="xxD-7X-CNW" id="KRc-fb-vZd"/>
+                        <outlet property="bikePaceLabel" destination="hU7-M5-F9V" id="Cio-wc-DfF"/>
                         <outlet property="bikeSecondsPace" destination="ErT-tT-a9V" id="uHP-zF-B9n"/>
                         <outlet property="bikeSecondsTime" destination="aza-r9-jd6" id="Fdl-SD-rwa"/>
                         <outlet property="bikeSpeed" destination="wg1-Vs-0im" id="una-x1-dtB"/>
+                        <outlet property="bikeSpeedLabel" destination="vqG-Od-wOq" id="74S-1F-T8l"/>
+                        <outlet property="bikeTimeLabel" destination="ZTU-MB-e4M" id="ce1-Ta-3CT"/>
                         <outlet property="firstTransitMinutes" destination="HJj-rq-4Io" id="Opg-Ir-vvz"/>
                         <outlet property="firstTransitSeconds" destination="heL-EI-Ztb" id="YJp-7k-xLY"/>
+                        <outlet property="kilometersButton" destination="UfM-0W-IJS" id="JUr-tU-yvD"/>
+                        <outlet property="mainView" destination="5EZ-qb-Rvc" id="wk9-T0-Zyu"/>
+                        <outlet property="runEmptyPace" destination="dxi-1T-8fx" id="gXv-nE-2SW"/>
                         <outlet property="runHoursTime" destination="9sm-kl-Mzv" id="iwD-1j-iCh"/>
+                        <outlet property="runMainView" destination="zVO-iT-abZ" id="TqQ-Hq-tHu"/>
                         <outlet property="runMinutesPace" destination="VHk-GW-ez5" id="UrT-c0-CHr"/>
                         <outlet property="runMinutesTime" destination="HfU-Zj-0rw" id="C4T-kq-POO"/>
+                        <outlet property="runPaceLabel" destination="LMs-84-sHL" id="69Y-If-goS"/>
                         <outlet property="runSecondsPace" destination="GWe-3p-877" id="KHb-pj-q7e"/>
                         <outlet property="runSecondsTime" destination="dDk-HJ-sgK" id="opf-sN-LCt"/>
                         <outlet property="runSpeed" destination="6hP-kt-9FX" id="dsT-Lh-qf0"/>
+                        <outlet property="runSpeedLabel" destination="Qh4-LW-1sB" id="BqZ-uV-4Bh"/>
+                        <outlet property="runTextLabel" destination="dPu-fj-cyU" id="jfB-BJ-BMx"/>
+                        <outlet property="saveButton" destination="als-kQ-dra" id="EzF-J0-rO4"/>
                         <outlet property="secondTransitMinutes" destination="4Ti-d3-a0C" id="aq5-Zf-NfC"/>
                         <outlet property="secondTransitSeconds" destination="EvP-uV-vV8" id="fI0-cC-xWi"/>
+                        <outlet property="sprintButton" destination="9II-nr-DLP" id="w9D-Iz-3aj"/>
+                        <outlet property="swimEmptyPace" destination="kFX-W7-hKv" id="p3V-xs-4uN"/>
                         <outlet property="swimHoursTime" destination="X6z-C0-g4r" id="tFZ-iw-CzM"/>
+                        <outlet property="swimMainView" destination="ahn-01-Wme" id="biV-1i-syl"/>
                         <outlet property="swimMinutesPace" destination="EE8-7E-eUk" id="Nh6-Jy-2gG"/>
                         <outlet property="swimMinutesTime" destination="757-pO-gd4" id="USr-pS-1Ce"/>
+                        <outlet property="swimPaceLabel" destination="m1H-01-zWY" id="jem-fB-6xm"/>
                         <outlet property="swimSecondsPace" destination="aGs-XJ-ZXX" id="sRY-hR-LhQ"/>
                         <outlet property="swimSecondsTime" destination="bUH-bN-l7b" id="ryN-OP-xtl"/>
                         <outlet property="swimSpeed" destination="JHm-K9-u2h" id="KoP-4o-iVO"/>
+                        <outlet property="swimSpeedLabel" destination="MB2-bp-Qb4" id="dMN-6f-HNG"/>
+                        <outlet property="swimTimeLabel" destination="kR3-5b-xnV" id="7D8-eN-b10"/>
+                        <outlet property="t1Label" destination="dc9-1W-Nzb" id="EjM-zw-oag"/>
+                        <outlet property="t2Label" destination="E4q-k0-c5F" id="F7Y-AJ-c4V"/>
                         <outlet property="totalTimeLabel" destination="Kah-W1-4CG" id="NB5-fP-m2j"/>
+                        <outlet property="transitMainView" destination="MbQ-Yl-UwT" id="duM-yZ-oqs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -439,7 +461,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Bike" width="32" height="32"/>
         <image name="Calculator" width="32" height="32"/>
+        <image name="Run" width="32" height="32"/>
+        <image name="Swim" width="32" height="32"/>
         <systemColor name="systemGray3Color">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
