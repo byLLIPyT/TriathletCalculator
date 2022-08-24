@@ -119,7 +119,17 @@ class CalculatorViewController: UIViewController,UITextFieldDelegate {
     }
     
     @IBAction func changeTypeRace(_ sender: Any) {
-        
+        let viewControllerToPresent = DistanceViewController()
+            if let sheet = viewControllerToPresent.sheetPresentationController {
+                sheet.detents = [.medium()]
+                sheet.largestUndimmedDetentIdentifier = .medium
+                sheet.prefersScrollingExpandsWhenScrolledToEdge = false
+                sheet.prefersEdgeAttachedInCompactHeight = true
+                sheet.prefersGrabberVisible = true
+                sheet.preferredCornerRadius = 24
+            }
+            present(viewControllerToPresent, animated: true, completion: nil)
+        updateUI()
     }
     
     @IBAction func changeTypeMeasures(_ sender: Any) {
@@ -205,6 +215,10 @@ class CalculatorViewController: UIViewController,UITextFieldDelegate {
     }
     
     //MARK: - Private functions
+    
+    private func updateUI() {
+        totalTimeLabel.text = "01.01.01"
+    }
     
     private func calculateWhenTimeChanged(sportType: SportType) {
         switch sportType {
