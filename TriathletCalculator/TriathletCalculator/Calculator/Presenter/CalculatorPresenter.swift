@@ -7,6 +7,10 @@
 
 import Foundation
 
-class CalculatorPresenter {
+protocol CalculatorPresenterProtocol {
+    
+}
+
+class CalculatorPresenter: CalculatorPresenterProtocol {
     
 }
