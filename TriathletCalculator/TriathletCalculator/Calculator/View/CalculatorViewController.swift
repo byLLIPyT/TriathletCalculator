@@ -218,7 +218,7 @@ class CalculatorViewController: UIViewController,UITextFieldDelegate {
     
     private func updateUI() {
 
-        
+
         totalTimeLabel.text = "20:30:59"
     }
     
