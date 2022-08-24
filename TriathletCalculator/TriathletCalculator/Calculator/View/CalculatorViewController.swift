@@ -217,15 +217,7 @@ class CalculatorViewController: UIViewController,UITextFieldDelegate {
     //MARK: - Private functions
     
     private func updateUI() {
-<<<<<<< HEAD
-<<<<<<< HEAD
         totalTimeLabel.text = "20:30:00"
-=======
-        totalTimeLabel.text = "01.01.01"
->>>>>>> cd236f784f299c1c34c165feec82417ab3ce4283
-=======
-        totalTimeLabel.text = "01.01.01"
->>>>>>> cd236f784f299c1c34c165feec82417ab3ce4283
     }
     
     private func calculateWhenTimeChanged(sportType: SportType) {
