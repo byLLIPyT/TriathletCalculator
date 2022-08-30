@@ -7,7 +7,16 @@
 
 import UIKit
 
-class QaAViewController: UIViewController {
+class QaAViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "qaCell", for: indexPath)
+        return cell
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

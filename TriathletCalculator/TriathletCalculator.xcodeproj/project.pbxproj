@@ -19,9 +19,11 @@
 		4E3C7EF0288C7D6600615E65 /* SportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3C7EEF288C7D6600615E65 /* SportType.swift */; };
 		4E3C7EF2288C7DE300615E65 /* TransitZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3C7EF1288C7DE300615E65 /* TransitZone.swift */; };
 		4E3C7EF4288C7DFD00615E65 /* ZoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3C7EF3288C7DFD00615E65 /* ZoneNumber.swift */; };
+		4E5E7DA128BD32D90031DD11 /* Forecasts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E7DA028BD32D90031DD11 /* Forecasts.swift */; };
+		4E5E7DA328BD466A0031DD11 /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E7DA228BD466A0031DD11 /* ForecastViewController.swift */; };
+		4E5E7DA528BD49280031DD11 /* ForecastCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E7DA428BD49280031DD11 /* ForecastCellTableViewCell.swift */; };
 		4E84B2C828B206820031F0E7 /* DistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E84B2C728B206820031F0E7 /* DistanceViewController.swift */; };
 		4E8CDB94281C783A00CBD44B /* QaAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8CDB93281C783A00CBD44B /* QaAViewController.swift */; };
-		4E8CDB96281C785000CBD44B /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8CDB95281C785000CBD44B /* ForecastViewController.swift */; };
 		4E8CDB98281C786200CBD44B /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8CDB97281C786200CBD44B /* CalculatorViewController.swift */; };
 		4E9BAFCF287DF65C00D9D5F0 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BAFCE287DF65C00D9D5F0 /* StorageService.swift */; };
 		4E9BAFD1287E0B0200D9D5F0 /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BAFD0287E0B0200D9D5F0 /* Distance.swift */; };
@@ -30,6 +32,7 @@
 		4EADAA632819C73B00C42001 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EADAA622819C73B00C42001 /* MainViewController.swift */; };
 		4EADAA682819D14B00C42001 /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EADAA672819D14B00C42001 /* Calculator.storyboard */; };
 		4EB6F877288361000096EAEE /* Distances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB6F876288361000096EAEE /* Distances.swift */; };
+		4EBD407528B6C55F007D1D01 /* CreateCustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBD407428B6C55F007D1D01 /* CreateCustomViewController.swift */; };
 		4EBD51BA287D763A00A56BFA /* Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBD51B9287D763A00A56BFA /* Convert.swift */; };
 		4EE4C165282709E7001299EC /* QuestionAndAnswerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4C164282709E7001299EC /* QuestionAndAnswerPresenter.swift */; };
 		4EE4C167282709F4001299EC /* ForecastPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4C166282709F4001299EC /* ForecastPresenter.swift */; };
@@ -78,9 +81,11 @@
 		4E3C7EEF288C7D6600615E65 /* SportType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportType.swift; sourceTree = "<group>"; };
 		4E3C7EF1288C7DE300615E65 /* TransitZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitZone.swift; sourceTree = "<group>"; };
 		4E3C7EF3288C7DFD00615E65 /* ZoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneNumber.swift; sourceTree = "<group>"; };
+		4E5E7DA028BD32D90031DD11 /* Forecasts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecasts.swift; sourceTree = "<group>"; };
+		4E5E7DA228BD466A0031DD11 /* ForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
+		4E5E7DA428BD49280031DD11 /* ForecastCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCellTableViewCell.swift; sourceTree = "<group>"; };
 		4E84B2C728B206820031F0E7 /* DistanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceViewController.swift; sourceTree = "<group>"; };
 		4E8CDB93281C783A00CBD44B /* QaAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QaAViewController.swift; sourceTree = "<group>"; };
-		4E8CDB95281C785000CBD44B /* ForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
 		4E8CDB97281C786200CBD44B /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		4E9BAFCE287DF65C00D9D5F0 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		4E9BAFD0287E0B0200D9D5F0 /* Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
@@ -89,6 +94,7 @@
 		4EADAA622819C73B00C42001 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4EADAA672819D14B00C42001 /* Calculator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
 		4EB6F876288361000096EAEE /* Distances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distances.swift; sourceTree = "<group>"; };
+		4EBD407428B6C55F007D1D01 /* CreateCustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCustomViewController.swift; sourceTree = "<group>"; };
 		4EBD51B9287D763A00A56BFA /* Convert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convert.swift; sourceTree = "<group>"; };
 		4EE4C164282709E7001299EC /* QuestionAndAnswerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAndAnswerPresenter.swift; sourceTree = "<group>"; };
 		4EE4C166282709F4001299EC /* ForecastPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastPresenter.swift; sourceTree = "<group>"; };
@@ -204,6 +210,7 @@
 		4E8CDB8C281C769400CBD44B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4E5E7DA028BD32D90031DD11 /* Forecasts.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -212,7 +219,8 @@
 			isa = PBXGroup;
 			children = (
 				4EADAA5E2819C64100C42001 /* Forecast.storyboard */,
-				4E8CDB95281C785000CBD44B /* ForecastViewController.swift */,
+				4E5E7DA428BD49280031DD11 /* ForecastCellTableViewCell.swift */,
+				4E5E7DA228BD466A0031DD11 /* ForecastViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -295,6 +303,7 @@
 				4EADAA672819D14B00C42001 /* Calculator.storyboard */,
 				4E8CDB97281C786200CBD44B /* CalculatorViewController.swift */,
 				4E84B2C728B206820031F0E7 /* DistanceViewController.swift */,
+				4EBD407428B6C55F007D1D01 /* CreateCustomViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -457,6 +466,7 @@
 				4E8CDB94281C783A00CBD44B /* QaAViewController.swift in Sources */,
 				4E9BAFD1287E0B0200D9D5F0 /* Distance.swift in Sources */,
 				4EE4C171282710E6001299EC /* Transit.swift in Sources */,
+				4E5E7DA328BD466A0031DD11 /* ForecastViewController.swift in Sources */,
 				4E9BAFCF287DF65C00D9D5F0 /* StorageService.swift in Sources */,
 				4EE4C167282709F4001299EC /* ForecastPresenter.swift in Sources */,
 				4EE4C1772827159E001299EC /* Questions.swift in Sources */,
@@ -464,12 +474,14 @@
 				4EE4C17A282716BB001299EC /* OptionsConfig.swift in Sources */,
 				4EADAA632819C73B00C42001 /* MainViewController.swift in Sources */,
 				4E3C7EEE288C7D4800615E65 /* Sport.swift in Sources */,
+				4EBD407528B6C55F007D1D01 /* CreateCustomViewController.swift in Sources */,
 				4EE4C173282714C2001299EC /* TypeOfRace.swift in Sources */,
-				4E8CDB96281C785000CBD44B /* ForecastViewController.swift in Sources */,
+				4E5E7DA128BD32D90031DD11 /* Forecasts.swift in Sources */,
 				4EE4C16D282710C3001299EC /* Bike.swift in Sources */,
 				4EE4C17528271560001299EC /* MeasuringUnit.swift in Sources */,
 				4E3C7EF0288C7D6600615E65 /* SportType.swift in Sources */,
 				4E0BAB222815B0D60077F18A /* AppDelegate.swift in Sources */,
+				4E5E7DA528BD49280031DD11 /* ForecastCellTableViewCell.swift in Sources */,
 				4EB6F877288361000096EAEE /* Distances.swift in Sources */,
 				4EE4C165282709E7001299EC /* QuestionAndAnswerPresenter.swift in Sources */,
 				4E3C7EF2288C7DE300615E65 /* TransitZone.swift in Sources */,

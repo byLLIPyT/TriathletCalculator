@@ -9,9 +9,14 @@ import UIKit
 
 class CalculatorViewController: UIViewController,UITextFieldDelegate {
     
+    //MARK: - Labels
     @IBOutlet weak var totalTimeLabel: UILabel!
-    @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var swimDistanceLabel: UILabel!
+    @IBOutlet weak var bikeDistanceLabel: UILabel!
+    @IBOutlet weak var runDistanceLabel: UILabel!
     
+    //MARK: - Buttons
+    @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var sprintButton: UIButton!
     @IBOutlet weak var kilometersButton: UIButton!
     @IBOutlet var mainView: UIView!
@@ -106,7 +111,16 @@ class CalculatorViewController: UIViewController,UITextFieldDelegate {
         
         firstTransitZone = TransitZone(zoneNumber: .first)
         secondTransitZone = TransitZone(zoneNumber: .second)
+        updateUI()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        print("will apear")
+    }
+    
+    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
@@ -120,15 +134,15 @@ class CalculatorViewController: UIViewController,UITextFieldDelegate {
     
     @IBAction func changeTypeRace(_ sender: Any) {
         let viewControllerToPresent = DistanceViewController()
-            if let sheet = viewControllerToPresent.sheetPresentationController {
-                sheet.detents = [.medium()]
-                sheet.largestUndimmedDetentIdentifier = .medium
-                sheet.prefersScrollingExpandsWhenScrolledToEdge = false
-                sheet.prefersEdgeAttachedInCompactHeight = true
-                sheet.prefersGrabberVisible = true
-                sheet.preferredCornerRadius = 24
-            }
-            present(viewControllerToPresent, animated: true, completion: nil)
+        if let sheet = viewControllerToPresent.sheetPresentationController {
+            sheet.detents = [.medium()]
+            sheet.largestUndimmedDetentIdentifier = .large
+            sheet.prefersScrollingExpandsWhenScrolledToEdge = false
+            sheet.prefersEdgeAttachedInCompactHeight = true
+            sheet.prefersGrabberVisible = true
+            sheet.preferredCornerRadius = 24
+        }
+        present(viewControllerToPresent, animated: true, completion: nil)
         updateUI()
     }
     
@@ -216,10 +230,24 @@ class CalculatorViewController: UIViewController,UITextFieldDelegate {
     
     //MARK: - Private functions
     
-    private func updateUI() {
+    func updateUI() {
 
+        let distanceOfSwim = storageService.getSwimDistance()
+        let distanceOfBike = storageService.getBikeDistance()
+        let distanceOfRun = storageService.getRunDistance()
+        let colorSwimDistance = UIColor(named: "colorSwimDistanceLabel")
+        let colorBikeDistance = UIColor(named: "colorBikeDistanceLabel")
+        let colorRunDistance = UIColor(named: "colorRunDistanceLabel")
+                
+        
+        swimDistanceLabel.text = "Swim - \(distanceOfSwim) km"
+        swimDistanceLabel.textColor = colorSwimDistance
+        bikeDistanceLabel.text = "Bike - \(distanceOfBike) km"
+        bikeDistanceLabel.textColor = colorBikeDistance
+        runDistanceLabel.text = "Run - \(distanceOfRun) km"
+        runDistanceLabel.textColor = colorRunDistance
 
-        totalTimeLabel.text = "20:30:59"
+        totalTimeLabel.text = "00:00:00"
     }
     
     private func calculateWhenTimeChanged(sportType: SportType) {

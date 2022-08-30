@@ -10,6 +10,7 @@ import UIKit
 class DistanceViewController: UIViewController {
        
     let storageService = StorageService()
+    let calculatorViewController = CalculatorViewController()
     
     let titleLabel: UILabel = {
         let textColor = UIColor(named: "textFieldTextColor")
@@ -108,8 +109,8 @@ class DistanceViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = .white
+        let backgroundColor = UIColor(named: "colorBackgroundPresentationWindow")
+        view.backgroundColor = backgroundColor
         view.addSubview(titleLabel)
         
         NSLayoutConstraint.activate([
@@ -122,7 +123,6 @@ class DistanceViewController: UIViewController {
         view.addSubview(olympicButton)
         view.addSubview(ironman703Button)
         view.addSubview(ironman141Button)
-        
         
         let firstButtonStack = UIStackView(arrangedSubviews: [sprintButton, olympicButton])
         firstButtonStack.axis = .horizontal
@@ -164,13 +164,25 @@ class DistanceViewController: UIViewController {
     }
     
     @objc func customButtonTapped(sender: UIButton!) {
-        print("Custom button")
+        let viewControllerToPresent = CreateCustomViewController()
+        if let sheet = viewControllerToPresent.sheetPresentationController {
+            sheet.detents = [.medium()]
+            sheet.largestUndimmedDetentIdentifier = .medium
+            sheet.prefersScrollingExpandsWhenScrolledToEdge = false
+            sheet.prefersEdgeAttachedInCompactHeight = true
+            sheet.prefersGrabberVisible = true
+            sheet.preferredCornerRadius = 24
+        }
+        //dismiss(animated: true)
+        present(viewControllerToPresent, animated: true, completion: nil)
+        
     }
     
     @objc func sprintDistanceChangeButtonTapped(sender: UIButton!) {
         storageService.setSwimDistance(distance: 0.75)
         storageService.setBikeDistance(distance: 20.0)
         storageService.setRunDistance(distance: 5.0)
+        
         dismiss(animated: true)
     }
     
@@ -178,6 +190,7 @@ class DistanceViewController: UIViewController {
         storageService.setSwimDistance(distance: 1.5)
         storageService.setBikeDistance(distance: 40.0)
         storageService.setRunDistance(distance: 10.0)
+        
         dismiss(animated: true)
     }
     
@@ -185,6 +198,7 @@ class DistanceViewController: UIViewController {
         storageService.setSwimDistance(distance: 1.9)
         storageService.setBikeDistance(distance: 90.0)
         storageService.setRunDistance(distance: 21.0)
+        
         dismiss(animated: true)
     }
     
@@ -192,6 +206,7 @@ class DistanceViewController: UIViewController {
         storageService.setSwimDistance(distance: 3.8)
         storageService.setBikeDistance(distance: 180.0)
         storageService.setRunDistance(distance: 42.0)
+        
         dismiss(animated: true)
     }
 }

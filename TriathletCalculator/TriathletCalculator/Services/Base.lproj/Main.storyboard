@@ -29,16 +29,6 @@
             </objects>
             <point key="canvasLocation" x="-162" y="59"/>
         </scene>
-        <!--Forecast-->
-        <scene sceneID="Rc9-vd-NbO">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Forecast" id="FAG-56-chl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Forecast" id="o5a-17-mfz"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fca-H7-YMT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="249" y="40"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="gLX-ax-IDo">
             <objects>
@@ -57,6 +47,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x6O-0r-mc5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-163" y="-371"/>
+        </scene>
+        <!--Forecast-->
+        <scene sceneID="Rc9-vd-NbO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Forecast" id="FAG-56-chl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Forecast" id="o5a-17-mfz"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fca-H7-YMT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270" y="40"/>
         </scene>
     </scenes>
     <resources>

@@ -39,7 +39,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total: 05:08:42" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kah-W1-4CG">
                                 <rect key="frame" x="20" y="67" width="209" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Semibold" family="PingFang HK" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -48,7 +48,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1k-Z3-Otx">
-                                <rect key="frame" x="45" y="155" width="42" height="21"/>
+                                <rect key="frame" x="45" y="155" width="240" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -59,7 +59,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bike" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZn-cc-HRX">
-                                <rect key="frame" x="50" y="358" width="33" height="21"/>
+                                <rect key="frame" x="50" y="358" width="235" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -84,7 +84,7 @@
                                         <rect key="frame" x="88" y="16" width="75" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                         <connections>
                                             <action selector="bikeHourTextChanged:" destination="Y6W-OH-hqX" eventType="editingChanged" id="eo7-8v-fNe"/>
                                         </connections>
@@ -93,7 +93,7 @@
                                         <rect key="frame" x="179" y="16" width="75" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                         <connections>
                                             <action selector="bikeMinutesTextChanged:" destination="Y6W-OH-hqX" eventType="editingChanged" id="zwO-ey-sSS"/>
                                         </connections>
@@ -102,7 +102,7 @@
                                         <rect key="frame" x="271" y="17" width="75" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                         <connections>
                                             <action selector="bikeSecondsTextChanged:" destination="Y6W-OH-hqX" eventType="editingChanged" id="w1R-Km-8ha"/>
                                         </connections>
@@ -124,7 +124,7 @@
                                         <rect key="frame" x="179" y="59" width="75" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                         <connections>
                                             <action selector="bikeMinutesPaceTextChanged:" destination="Y6W-OH-hqX" eventType="editingChanged" id="3Bw-oD-My2"/>
                                         </connections>
@@ -133,7 +133,7 @@
                                         <rect key="frame" x="271" y="60" width="75" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                         <connections>
                                             <action selector="bikeSecondsPaceTextChanged:" destination="Y6W-OH-hqX" eventType="editingChanged" id="QsS-h6-hBv"/>
                                         </connections>
@@ -149,7 +149,7 @@
                                         <rect key="frame" x="88" y="102" width="258" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                         <connections>
                                             <action selector="bikeSpeedTextChanged:" destination="Y6W-OH-hqX" eventType="editingChanged" id="CRY-T1-St8"/>
                                         </connections>
@@ -172,7 +172,7 @@
                                         <rect key="frame" x="88" y="16" width="75" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                         <connections>
                                             <action selector="runHourTextChanged:" destination="Y6W-OH-hqX" eventType="editingChanged" id="JWy-Vd-iO5"/>
                                         </connections>
@@ -181,7 +181,7 @@
                                         <rect key="frame" x="179" y="16" width="75" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                         <connections>
                                             <action selector="runMinutesTextChanged:" destination="Y6W-OH-hqX" eventType="editingChanged" id="OoB-PA-IhM"/>
                                         </connections>
@@ -190,7 +190,7 @@
                                         <rect key="frame" x="271" y="17" width="75" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                         <connections>
                                             <action selector="runSecondsTextChanged:" destination="Y6W-OH-hqX" eventType="editingChanged" id="zCx-6g-l9K"/>
                                         </connections>
@@ -212,7 +212,7 @@
                                         <rect key="frame" x="179" y="59" width="75" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                         <connections>
                                             <action selector="runMinutesPaceTextChanged:" destination="Y6W-OH-hqX" eventType="editingChanged" id="N9d-Ib-N6o"/>
                                         </connections>
@@ -221,7 +221,7 @@
                                         <rect key="frame" x="271" y="60" width="75" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                         <connections>
                                             <action selector="runSecondsPaceTextChanged:" destination="Y6W-OH-hqX" eventType="editingChanged" id="Xe1-W5-VTu"/>
                                         </connections>
@@ -237,7 +237,7 @@
                                         <rect key="frame" x="88" y="102" width="258" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                         <connections>
                                             <action selector="runSpeedTextChanged:" destination="Y6W-OH-hqX" eventType="editingChanged" id="rhB-nJ-avD"/>
                                         </connections>
@@ -260,13 +260,13 @@
                                         <rect key="frame" x="34" y="9" width="65" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ss" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="heL-EI-Ztb">
                                         <rect key="frame" x="106" y="9" width="65" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="T2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4q-k0-c5F">
                                         <rect key="frame" x="181" y="16" width="21" height="21"/>
@@ -279,13 +279,13 @@
                                         <rect key="frame" x="212" y="9" width="65" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ss" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EvP-uV-vV8">
                                         <rect key="frame" x="285" y="9" width="65" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray3Color"/>
@@ -391,7 +391,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Run" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doO-k6-pjy">
-                                <rect key="frame" x="45" y="554" width="30" height="21"/>
+                                <rect key="frame" x="45" y="554" width="240" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -408,6 +408,7 @@
                     <tabBarItem key="tabBarItem" title="Calculator" image="Calculator" id="vsJ-gc-5Au"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="bikeDistanceLabel" destination="YZn-cc-HRX" id="oug-WQ-We3"/>
                         <outlet property="bikeEmptyPace" destination="RDe-EM-89M" id="rPt-Hr-mwv"/>
                         <outlet property="bikeHoursTime" destination="bgR-2m-Abm" id="I4p-hW-HRb"/>
                         <outlet property="bikeMainView" destination="q5u-D9-3ia" id="j1W-ZF-ckn"/>
@@ -423,6 +424,7 @@
                         <outlet property="firstTransitSeconds" destination="heL-EI-Ztb" id="YJp-7k-xLY"/>
                         <outlet property="kilometersButton" destination="UfM-0W-IJS" id="JUr-tU-yvD"/>
                         <outlet property="mainView" destination="5EZ-qb-Rvc" id="wk9-T0-Zyu"/>
+                        <outlet property="runDistanceLabel" destination="doO-k6-pjy" id="J8H-Nv-JYZ"/>
                         <outlet property="runEmptyPace" destination="dxi-1T-8fx" id="gXv-nE-2SW"/>
                         <outlet property="runHoursTime" destination="9sm-kl-Mzv" id="iwD-1j-iCh"/>
                         <outlet property="runMainView" destination="zVO-iT-abZ" id="TqQ-Hq-tHu"/>
@@ -438,6 +440,7 @@
                         <outlet property="secondTransitMinutes" destination="4Ti-d3-a0C" id="aq5-Zf-NfC"/>
                         <outlet property="secondTransitSeconds" destination="EvP-uV-vV8" id="fI0-cC-xWi"/>
                         <outlet property="sprintButton" destination="9II-nr-DLP" id="w9D-Iz-3aj"/>
+                        <outlet property="swimDistanceLabel" destination="A1k-Z3-Otx" id="Sgo-wH-Hit"/>
                         <outlet property="swimEmptyPace" destination="kFX-W7-hKv" id="p3V-xs-4uN"/>
                         <outlet property="swimHoursTime" destination="X6z-C0-g4r" id="tFZ-iw-CzM"/>
                         <outlet property="swimMainView" destination="ahn-01-Wme" id="biV-1i-syl"/>
@@ -459,24 +462,9 @@
             </objects>
             <point key="canvasLocation" x="1046.376811594203" y="131.91964285714286"/>
         </scene>
-        <!--Distance View Controller-->
-        <scene sceneID="Sdb-Xx-Sop">
-            <objects>
-                <viewController id="jB0-7x-wdU" customClass="DistanceViewController" customModule="TriathletCalculator" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Xjm-r5-iGY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="kXO-72-BOA"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="svS-xX-OzD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1734.7826086956522" y="131.91964285714286"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="Bike" width="32" height="32"/>
+        <image name="Bike" width="8" height="8"/>
         <image name="Calculator" width="32" height="32"/>
         <image name="Run" width="32" height="32"/>
         <image name="Swim" width="32" height="32"/>
