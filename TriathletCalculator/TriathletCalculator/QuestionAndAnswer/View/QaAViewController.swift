@@ -8,31 +8,72 @@
 import UIKit
 
 class QaAViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var paywallView: UIView!
+    @IBOutlet weak var verticalView: UIView!
+    @IBOutlet weak var headerPaywallLabel: UILabel!
+    @IBOutlet weak var paywallText: UILabel!
+        
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "qaCell", for: indexPath)
-        return cell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "qaCell", for: indexPath) as? quTableViewCell {
+            cell.setupUI()
+            return cell
+        }
+        return tableView.dequeueReusableCell(withIdentifier: "qaCell", for: indexPath)
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let viewControllerToPresent = QuestionViewController()
+        if let sheet = viewControllerToPresent.sheetPresentationController {
+            sheet.detents = [.medium()]
+            sheet.largestUndimmedDetentIdentifier = .large
+            sheet.prefersScrollingExpandsWhenScrolledToEdge = false
+            sheet.prefersEdgeAttachedInCompactHeight = true
+            sheet.prefersGrabberVisible = true
+            sheet.preferredCornerRadius = 24
+        }
+        present(viewControllerToPresent, animated: true, completion: nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let backgroundColor = UIColor(named: "backgroundColor")
+        view.backgroundColor = backgroundColor
+        setupUI()
+        
+        let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.checkAction))
+        self.paywallView.addGestureRecognizer(gesture)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func checkAction(sender : UITapGestureRecognizer) {
+        let viewControllerToPresent = PaywallViewController()
+        if let sheet = viewControllerToPresent.sheetPresentationController {
+            sheet.detents = [.medium()]
+            sheet.largestUndimmedDetentIdentifier = .large
+            sheet.prefersScrollingExpandsWhenScrolledToEdge = false
+            sheet.prefersEdgeAttachedInCompactHeight = true
+            sheet.prefersGrabberVisible = true
+            sheet.preferredCornerRadius = 24
+        }
+        present(viewControllerToPresent, animated: true, completion: nil)
     }
-    */
-
+    
+    private func setupUI() {
+        let questionViewColor = UIColor(named: "questionView")
+        let verticalViewColor = UIColor(named: "verticalViewColor")
+        let headerPaywallTextColor = UIColor(named: "colorPaywallHeaderTextColor")
+        let paywallTextColor = UIColor(named: "colorPaywallTextColor")
+        
+        paywallView.layer.cornerRadius = 12
+        paywallView.backgroundColor = questionViewColor
+        verticalView.backgroundColor = verticalViewColor
+        headerPaywallLabel.textColor = headerPaywallTextColor
+        paywallText.textColor = paywallTextColor
+    }
+    
+    
 }
