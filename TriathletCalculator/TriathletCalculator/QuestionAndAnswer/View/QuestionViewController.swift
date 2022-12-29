@@ -13,4 +13,6 @@ class QuestionViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .green
     }
+    
+
 }
