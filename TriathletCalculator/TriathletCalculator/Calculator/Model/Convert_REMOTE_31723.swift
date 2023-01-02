@@ -22,6 +22,7 @@ struct Convert: ConvertProtocol {
         }
         
     }
+    
     func stringToDouble(str: String) -> Double {
         if let intValue = Double(str) {
             return intValue

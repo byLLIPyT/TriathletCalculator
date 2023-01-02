@@ -10,7 +10,6 @@ import Foundation
 protocol ConvertProtocol {
     func stringToInt(str: String) -> Int
     func stringToDouble(str: String) -> Double
-    
 }
 
 struct Convert: ConvertProtocol {
@@ -20,8 +19,8 @@ struct Convert: ConvertProtocol {
         } else {
             return 0
         }
-        
     }
+    
     func stringToDouble(str: String) -> Double {
         if let intValue = Double(str) {
             return intValue
@@ -29,6 +28,5 @@ struct Convert: ConvertProtocol {
             return 0.0
         }
     }
-    
     
 }

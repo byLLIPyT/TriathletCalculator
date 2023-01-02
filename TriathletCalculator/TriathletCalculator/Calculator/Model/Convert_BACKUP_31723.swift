@@ -29,6 +29,9 @@ struct Convert: ConvertProtocol {
             return 0.0
         }
     }
+<<<<<<< HEAD
+=======
     
     
+>>>>>>> Develop
 }
