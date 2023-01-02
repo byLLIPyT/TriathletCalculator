@@ -16,6 +16,7 @@ protocol ConvertProtocol {
 struct Convert: ConvertProtocol {
     func stringToInt(str: String) -> Int {
         if let intValue = Int(str) {
+            print("lalalal")
             return intValue
         } else {
             return 0
@@ -24,6 +25,7 @@ struct Convert: ConvertProtocol {
     }
     func stringToDouble(str: String) -> Double {
         if let intValue = Double(str) {
+            print("lalalal")
             return intValue
         } else {
             return 0.0
