@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+protocol CalculatorPresenterProtocol {
+    
+}
+
+class CalculatorPresenter: CalculatorPresenterProtocol {
+    
+}
