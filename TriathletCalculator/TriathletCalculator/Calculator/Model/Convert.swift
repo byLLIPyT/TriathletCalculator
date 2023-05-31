@@ -29,5 +29,4 @@ struct Convert: ConvertProtocol {
             return 0.0
         }
     }
-    
 }
